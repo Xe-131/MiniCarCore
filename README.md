@@ -16,8 +16,14 @@
 
 # 代码架构
 
-<pre lang="markdown"><code> ``` root/ ├── GANWEI/ # 感为无MCU 循迹模块驱动 ├── motor/ # 核心模块 ├── MSPM0/ # 中断与系统时钟 ├── UART/ # 串口通用函数 └── main # 主函数 ``` </code></pre>
-
+```
+root/
+├── GANWEI/   # 感为无MCU 循迹模块驱动
+├── motor/    # 核心模块
+├── MSPM0/    # 中断与系统时钟
+├── UART/     # 串口通用函数
+└── main      # 主函数
+```
 
 ---
 
