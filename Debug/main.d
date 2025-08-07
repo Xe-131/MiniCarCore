@@ -79,11 +79,8 @@ main.o: ../main.c \
  C:/Users/Xe-131/workspace_ccstheia/2025X/MSPM0/interrupt.h \
  C:/Users/Xe-131/workspace_ccstheia/2025X/motor/pid.h \
  C:/Users/Xe-131/workspace_ccstheia/2025X/motor/follow_line.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/MPU6050/mpu6050.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/motor/angle.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_hardware_iic.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_IIC.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_grayscale_sensor.h \
+ C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/No_Mcu_Ganv_Grayscale_Sensor_Config.h \
+ C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/ADC.h \
  C:/Users/Xe-131/workspace_ccstheia/2025X/UART/xe_uart.h \
  C:/Users/Xe-131/workspace_ccstheia/2025X/MSPM0/clock.h
 ti_msp_dl_config.h:
@@ -164,10 +161,7 @@ C:/Users/Xe-131/workspace_ccstheia/2025X/motor/motor.h:
 C:/Users/Xe-131/workspace_ccstheia/2025X/MSPM0/interrupt.h:
 C:/Users/Xe-131/workspace_ccstheia/2025X/motor/pid.h:
 C:/Users/Xe-131/workspace_ccstheia/2025X/motor/follow_line.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/MPU6050/mpu6050.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/motor/angle.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_hardware_iic.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_IIC.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_grayscale_sensor.h:
+C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/No_Mcu_Ganv_Grayscale_Sensor_Config.h:
+C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/ADC.h:
 C:/Users/Xe-131/workspace_ccstheia/2025X/UART/xe_uart.h:
 C:/Users/Xe-131/workspace_ccstheia/2025X/MSPM0/clock.h:

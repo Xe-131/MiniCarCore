@@ -13,16 +13,11 @@ ORDERED_OBJS += \
 "./ti_msp_dl_config.o" \
 "./startup_mspm0g350x_ticlang.o" \
 "./main.o" \
-"./GANWEI/gw_IIC.o" \
-"./GANWEI/gw_hardware_iic.o" \
-"./MPU6050/inv_mpu.o" \
-"./MPU6050/inv_mpu_dmp_motion_driver.o" \
-"./MPU6050/mpu6050.o" \
-"./MPU6050/mspm0_i2c.o" \
+"./GANWEI/ADC.o" \
+"./GANWEI/No_Mcu_Ganv_Grayscale_Sensor.o" \
 "./MSPM0/clock.o" \
 "./MSPM0/interrupt.o" \
 "./UART/xe_uart.o" \
-"./motor/angle.o" \
 "./motor/follow_line.o" \
 "./motor/motor.o" \
 "./motor/pid.o" \
@@ -39,13 +34,11 @@ RMDIR := RMDIR /S/Q
 -include sources.mk
 -include subdir_vars.mk
 -include GANWEI/subdir_vars.mk
--include MPU6050/subdir_vars.mk
 -include MSPM0/subdir_vars.mk
 -include UART/subdir_vars.mk
 -include motor/subdir_vars.mk
 -include subdir_rules.mk
 -include GANWEI/subdir_rules.mk
--include MPU6050/subdir_rules.mk
 -include MSPM0/subdir_rules.mk
 -include UART/subdir_rules.mk
 -include motor/subdir_rules.mk
@@ -166,8 +159,8 @@ all: $(OBJS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "main.o" "GANWEI\gw_IIC.o" "GANWEI\gw_hardware_iic.o" "MPU6050\inv_mpu.o" "MPU6050\inv_mpu_dmp_motion_driver.o" "MPU6050\mpu6050.o" "MPU6050\mspm0_i2c.o" "MSPM0\clock.o" "MSPM0\interrupt.o" "UART\xe_uart.o" "motor\angle.o" "motor\follow_line.o" "motor\motor.o" "motor\pid.o" 
-	-$(RM) "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "main.d" "GANWEI\gw_IIC.d" "GANWEI\gw_hardware_iic.d" "MPU6050\inv_mpu.d" "MPU6050\inv_mpu_dmp_motion_driver.d" "MPU6050\mpu6050.d" "MPU6050\mspm0_i2c.d" "MSPM0\clock.d" "MSPM0\interrupt.d" "UART\xe_uart.d" "motor\angle.d" "motor\follow_line.d" "motor\motor.d" "motor\pid.d" 
+	-$(RM) "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "main.o" "GANWEI\ADC.o" "GANWEI\No_Mcu_Ganv_Grayscale_Sensor.o" "MSPM0\clock.o" "MSPM0\interrupt.o" "UART\xe_uart.o" "motor\follow_line.o" "motor\motor.o" "motor\pid.o" 
+	-$(RM) "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "main.d" "GANWEI\ADC.d" "GANWEI\No_Mcu_Ganv_Grayscale_Sensor.d" "MSPM0\clock.d" "MSPM0\interrupt.d" "UART\xe_uart.d" "motor\follow_line.d" "motor\motor.d" "motor\pid.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

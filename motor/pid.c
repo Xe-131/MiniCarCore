@@ -1,14 +1,12 @@
 #include "pid.h"
 #include "motor.h"
 #include "interrupt.h"
-// #include "mpu6050.h"
 
 
 // PID 对象
 pid_t pid_motor_left;
 pid_t pid_motor_right;
 
-// pid_t pid_distance;
 // 编码器计数
 int encode_cnt_left     = 0;
 int encode_cnt_right    = 0;
@@ -18,8 +16,6 @@ float now_speed_right   = 0;
 // 目标速度
 static float target_speed_left     = 0;
 static float target_speed_right    = 0;
-
-
 
 
 // ---------- 公共接口函数 ----------
@@ -43,9 +39,6 @@ void pid_init(pid_t *pid, uint32_t pid_mode, float p,  float i, float d){
  * @brief   计算调用间隔的轮子速度，融合角度与速度PID 的输出，转化为duty，最后改变轮子的PWM
  * @return  无
  */
-extern float	distance_left;
-extern float	distance_right;
-extern float	distance_mid;
 void speed_pid_controal(void){
 	float   motor_pid_left_value;
 	float   motor_pid_right_value;
@@ -54,11 +47,6 @@ void speed_pid_controal(void){
 	// mm/s
 	now_speed_left  = ((encode_cnt_left*(1.0)) / TIMER_PID_PERIOD) * 1000 / 260 * 150.79;
 	now_speed_right = ((encode_cnt_right*(1.0)) / TIMER_PID_PERIOD) * 1000 / 260 * 150.79;
-
-	// 积累历程(mm)
-	distance_left	= (encode_cnt_left*(1.0) / 260 * 150.79) + distance_left;
-	distance_right	= (encode_cnt_right*(1.0) / 260 * 150.79) + distance_right;
-	distance_mid	= (distance_left + distance_right) / 2;
 
 	// 归零计数器
 	encode_cnt_left     = 0;

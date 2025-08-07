@@ -6,27 +6,27 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../GANWEI/gw_IIC.c \
-../GANWEI/gw_hardware_iic.c 
+../GANWEI/ADC.c \
+../GANWEI/No_Mcu_Ganv_Grayscale_Sensor.c 
 
 C_DEPS += \
-./GANWEI/gw_IIC.d \
-./GANWEI/gw_hardware_iic.d 
+./GANWEI/ADC.d \
+./GANWEI/No_Mcu_Ganv_Grayscale_Sensor.d 
 
 OBJS += \
-./GANWEI/gw_IIC.o \
-./GANWEI/gw_hardware_iic.o 
+./GANWEI/ADC.o \
+./GANWEI/No_Mcu_Ganv_Grayscale_Sensor.o 
 
 OBJS__QUOTED += \
-"GANWEI\gw_IIC.o" \
-"GANWEI\gw_hardware_iic.o" 
+"GANWEI\ADC.o" \
+"GANWEI\No_Mcu_Ganv_Grayscale_Sensor.o" 
 
 C_DEPS__QUOTED += \
-"GANWEI\gw_IIC.d" \
-"GANWEI\gw_hardware_iic.d" 
+"GANWEI\ADC.d" \
+"GANWEI\No_Mcu_Ganv_Grayscale_Sensor.d" 
 
 C_SRCS__QUOTED += \
-"../GANWEI/gw_IIC.c" \
-"../GANWEI/gw_hardware_iic.c" 
+"../GANWEI/ADC.c" \
+"../GANWEI/No_Mcu_Ganv_Grayscale_Sensor.c" 
 
 

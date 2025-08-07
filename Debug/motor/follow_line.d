@@ -1,6 +1,7 @@
 # FIXED
 
 motor/follow_line.o: ../motor/follow_line.c ../motor/follow_line.h \
+ C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/No_Mcu_Ganv_Grayscale_Sensor_Config.h \
  ti_msp_dl_config.h \
  C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/devices/msp/msp.h \
  C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/devices/DeviceFamily.h \
@@ -75,13 +76,12 @@ motor/follow_line.o: ../motor/follow_line.c ../motor/follow_line.h \
  C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/dl_wwdt.h \
  C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/m0p/dl_interrupt.h \
  C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/m0p/dl_systick.h \
- ../motor/pid.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_hardware_iic.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_IIC.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_grayscale_sensor.h \
+ C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/ADC.h ../motor/pid.h \
  ../motor/motor.h \
- C:/Users/Xe-131/workspace_ccstheia/2025X/UART/xe_uart.h
+ C:/Users/Xe-131/workspace_ccstheia/2025X/UART/xe_uart.h \
+ C:/Users/Xe-131/workspace_ccstheia/2025X/MSPM0/clock.h
 ../motor/follow_line.h:
+C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/No_Mcu_Ganv_Grayscale_Sensor_Config.h:
 ti_msp_dl_config.h:
 C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/devices/msp/msp.h:
 C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/devices/DeviceFamily.h:
@@ -156,9 +156,8 @@ C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/dl_vref.h:
 C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/dl_wwdt.h:
 C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/m0p/dl_interrupt.h:
 C:/APPLICATION/ti_SDK/mspm0_sdk_2_04_00_06/source/ti/driverlib/m0p/dl_systick.h:
+C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/ADC.h:
 ../motor/pid.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_hardware_iic.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_IIC.h:
-C:/Users/Xe-131/workspace_ccstheia/2025X/GANWEI/gw_grayscale_sensor.h:
 ../motor/motor.h:
 C:/Users/Xe-131/workspace_ccstheia/2025X/UART/xe_uart.h:
+C:/Users/Xe-131/workspace_ccstheia/2025X/MSPM0/clock.h:

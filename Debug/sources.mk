@@ -126,7 +126,6 @@ GEN_OPTS__QUOTED :=
 SUBDIRS := \
 . \
 GANWEI \
-MPU6050 \
 MSPM0 \
 UART \
 motor \

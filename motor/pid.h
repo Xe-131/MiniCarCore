@@ -3,9 +3,6 @@
 
 #include "ti_msp_dl_config.h"
 
-// #define MAX_DUTY 100
-// #define MIN_DUTY -100
-
 typedef struct
 {
 	float target;	
@@ -29,8 +26,6 @@ extern float now_speed_right;
 
 extern pid_t pid_motor_left;
 extern pid_t pid_motor_right;
-
-// extern pid_t pid_distance;
 
 enum
 {
